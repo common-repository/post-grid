@@ -1,0 +1,159 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "post-grid/woo-product-tabs",
+  "title": "Woo Product Tabs",
+  "textdomain": "post-grid",
+  "category": "post-grid-woo",
+  "usesContext": [
+    "postId",
+    "loopIndex",
+    "postType",
+    "queryId"
+  ],
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "wrapper": {
+      "type": "object",
+      "default": {
+        "options": {
+          "tag": "div",
+          "class": "pg-woo-product-tabs"
+        },
+        "styles": {}
+      }
+    },
+    "woocommerce": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": "woocommerce"
+        },
+        "styles": {}
+      }
+    },
+    "navigation": {
+      "type": "object",
+      "default": {
+        "options": {
+          "tag": "div",
+          "class": "wc-tabs-wrapper"
+        },
+        "styles": {}
+      }
+    },
+    "navigationItemWrap": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": "wc-tabs"
+        },
+        "styles": {}
+      }
+    },
+    "navigationItem": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": ""
+        },
+        "styles": {}
+      }
+    },
+    "navigationItemActive": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": ""
+        },
+        "styles": {}
+      }
+    },
+    "navigationLink": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": ""
+        },
+        "styles": {}
+      }
+    },
+    "content": {
+      "type": "object",
+      "default": {
+        "options": {
+          "tag": "div",
+          "class": "woocommerce-MyAccount-content"
+        },
+        "styles": {}
+      }
+    },
+    "elements": {
+      "type": "object",
+      "default": {
+        "options": {
+          "showLabel": true,
+          "showIcon": false,
+          "iconPosition": "beforeLabel"
+        },
+        "styles": {},
+        "items": []
+      }
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": "icon",
+          "position": "beforeLabel"
+        },
+        "styles": {}
+      }
+    },
+    "panelWrap": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": "woocommerce-Tabs-panel"
+        },
+        "styles": {}
+      }
+    },
+    "panelHeading": {
+      "type": "object",
+      "default": {
+        "options": {
+          "class": "woocommerce-Tabs-panel > h2"
+        },
+        "styles": {}
+      }
+    },
+    "visible": {
+      "type": "object",
+      "default": {}
+    },
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "blockCssY": {
+      "type": "object",
+      "default": {
+        "items": {}
+      }
+    }
+  },
+  "style": "front_style",
+  "script": "front_script",
+  "keywords": [
+    "Woo breadcrumb",
+    "woocommerce breadcrumb",
+    "woocommerce breadcrumbs"
+  ],
+  "description": "woocommerce breadcrumbs block ."
+}
